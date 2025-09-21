@@ -23,10 +23,6 @@
 
   <!-- &=======> Main stylesheet -->
   <link rel="stylesheet" href="assets/css/main.css">
-
-  <!-- ~=======> about stylesheet -->
-  <link rel="stylesheet" href="assets/css/about.css">
-
 </head>
 
 <body>
@@ -40,157 +36,208 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto gap-2 gap-lg-3 mb-2 mb-lg-0">
-
-          <li class="nav-item">
-            <a class="nav-link fw-semibold " href="index.html">ホーム</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link fw-semibold active" aria-current="page" href="about.html">会社概要</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link fw-semibold" href="services.html">事業紹介</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link fw-semibold" href="properties.html">物件情報</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link fw-semibold" href="agents.html">営業</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link fw-semibold" href="contact.html">問い合わせ</a>
-          </li>
+          <li class="nav-item"><a class="nav-link fw-semibold active" aria-current="page" href="index.html">ホーム</a></li>
+          <li class="nav-item"><a class="nav-link fw-semibold" href="about.html">会社概要</a></li>
+          <li class="nav-item"><a class="nav-link fw-semibold" href="services.html">事業紹介</a></li>
+          <li class="nav-item"><a class="nav-link fw-semibold" href="properties.html">物件情報</a></li>
+          <li class="nav-item"><a class="nav-link fw-semibold" href="agents.html">営業</a></li>
+          <li class="nav-item"><a class="nav-link fw-semibold" href="contact.html">問い合わせ</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <!-- ^============> Header of about <============ -->
-  <header class="head py-5">
-    <div class="container pt-5">
-      <div class="title pt-5 mx-auto text-center">
-        <!-- 标题：居中 -->
-        <h2 class="fs-1 fw-bold">経営理念</h2>
-        <!-- 正文：左对齐，并且在标题下居中显示 -->
-        <div class="text-start mx-auto" style="max-width: 800px;">
-          <p>「信頼と実績で、不動産資産の価値を最大化する。」</p>
-          <p>私たちの使命は：</p>
-          <ul>
-            <li>不動産を通じてお客様の未来に貢献すること</li>
-            <li>誠実・高品質・迅速な対応で、長期的な信頼関係を築くこと</li>
-            <li>日本の不動産市場を熟知したプロフェッショナルとして、最適なソリューションを提供すること</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </header>
-
-
-
-  <section class="bg-body-tertiary">
-    <div class="container">
-      <nav aria-label="breadcrumb ">
-        <ol class="breadcrumb fw-bold py-3">
-          <li class="breadcrumb-item"><a href="index.html" class="text-decoration-none text-main">Home</a></li>
-          <li class="breadcrumb-item active" aria-current="page">About</li>
-        </ol>
-      </nav>
-    </div>
-  </section>
-
   <main>
-    <!-- &============> Content of about<============ -->
-    <section class="about-us py-5">
-      <div class="container">
-        <div class="row row-cols-lg-2">
-          <div>
-            <h2 class="fs-6 text-uppercase text-dark text-opacity-50">who we are</h2>
-            <h3 class="fw-bold fs-2 my-3">Unleashing Potential with Creative Strategy</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua.</p>
-            <ul class="list-unstyled d-flex flex-column gap-2">
-              <li>
-                <i class="bi bi-check-circle text-main me-1"></i>
-                Ullamco laboris nisi ut aliquip ex ea commodo consequat.
-              </li>
-              <li>
-                <i class="bi bi-check-circle text-main me-1"></i>
-                Duis aute irure dolor in reprehenderit in voluptate velit.
-              </li>
-              <li>
-                <i class="bi bi-check-circle text-main me-1"></i>
-                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.
-              </li>
-            </ul>
+    <!-- ~============> Home Section <============ -->
+    <section class="hero">
+      <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <!-- Slide 1 -->
+          <div class="carousel-item vh-100 active" data-bs-interval="5000">
+            <img src="assets/imgs/hero-Shinjuku Station.webp" class="d-block w-100 h-100 object-fit-cover" alt="hero-Shinjuku Station">
+            <div class="carousel-caption w-100 text-center top-50 start-50 translate-middle text-start">
+              <p>TOKYO</p>
+              <h2 class="display-3 fw-max-bold text-uppercase mb-5">
+                <span class="text-main">TTF、</span> 信頼でつなぐ、不動産の未来。
+              </h2>
+            </div>
           </div>
+          <!-- Slide 2 -->
+          <div class="carousel-item vh-100" data-bs-interval="5000">
+            <img src="assets/imgs/hero-Shinjuku Kabukicho.webp" class="d-block w-100 h-100 object-fit-cover" alt="hero-Shinjuku Kabukicho">
+            <div class="carousel-caption w-100 text-center top-50 start-50 translate-middle text-start">
+              <p>TOKYO</p>
+              <h2 class="display-3 fw-max-bold text-uppercase mb-5">
+                <span class="text-main">TTF、</span> 信頼でつなぐ、不動産の未来。
+              </h2>
+            </div>
+          </div>
+          <!-- Slide 3 -->
+          <div class="carousel-item vh-100" data-bs-interval="5000">
+            <img src="assets/imgs/hero-Shinjuku.webp" class="d-block w-100 h-100 object-fit-cover" alt="hero-Shinjuku">
+            <div class="carousel-caption w-100 text-center top-50 start-50 translate-middle text-start">
+              <p>TOKYO</p>
+              <h2 class="display-3 fw-max-bold text-uppercase mb-5">
+                <span class="text-main">TTF、</span> 信頼でつなぐ、不動産の未来。
+              </h2>
+            </div>
+          </div>
+        </div>
 
-          <div>
-            <div class="row g-4">
-              <div class="col-lg-6">
-                <img src="assets/imgs/about-company-1.jpg" class="rounded-3 w-100" alt="">
-              </div>
-              <div class="col-lg-6">
-                <div class="row row-cols-1 gy-4">
-                  <div>
-                    <img src="assets/imgs/about-company-2.jpg" class="rounded-3 w-100" alt="">
-                  </div>
-                  <div>
-                    <img src="assets/imgs/about-company-3.jpg" class="rounded-3 w-100" alt="">
-                  </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- &============> Services Section <============ -->
+    <section class="services py-5">
+      <div class="container py-3">
+        <div class="title text-center">
+          <h2 class="fw-bold">Our Services</h2>
+          <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        </div>
+
+        <div class="row row-cols-md-2 row-cols-lg-3 g-4 py-5">
+          <div class="card-container">
+            <div class="p-5 ps-4 rounded-4">
+              <a href="#" class="text-decoration-none">
+                <div class="icon bg-main text-white rounded-circle d-flex justify-content-center align-items-center">
+                  <i class="bi bi-activity"></i>
                 </div>
-              </div>
+                <h3 class="fw-bold fs-4 my-3">Nesciunt Mete</h3>
+                <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis tempore et consequatur.</p>
+              </a>
+            </div>
+          </div>
+
+          <div class="card-container">
+            <div class="p-5 ps-4 rounded-4">
+              <a href="#" class="text-decoration-none">
+                <div class="icon bg-main text-white rounded-circle d-flex justify-content-center align-items-center">
+                  <i class="bi bi-broadcast"></i>
+                </div>
+                <h3 class="fw-bold fs-4 my-3">Eosle Commodi</h3>
+                <p>Ut autem aut autem non a. Sint sint sit facilis nam iusto sint. Libero corrupti neque eum hic non ut nesciunt dolorem.</p>
+              </a>
+            </div>
+          </div>
+
+          <div class="card-container">
+            <div class="p-5 ps-4 rounded-4">
+              <a href="#" class="text-decoration-none">
+                <div class="icon bg-main text-white rounded-circle d-flex justify-content-center align-items-center">
+                  <i class="bi bi-easel"></i>
+                </div>
+                <h3 class="fw-bold fs-4 my-3">Ledo Markt</h3>
+                <p>Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id voluptas adipisci eos earum corrupti.</p>
+              </a>
+            </div>
+          </div>
+
+          <div class="card-container">
+            <div class="p-5 ps-4 rounded-4">
+              <a href="#" class="text-decoration-none">
+                <div class="icon bg-main text-white rounded-circle d-flex justify-content-center align-items-center">
+                  <i class="bi bi-bounding-box-circles"></i>
+                </div>
+                <h3 class="fw-bold fs-4 my-3">Asperiores Commodit</h3>
+                <p>Non et temporibus minus omnis sed dolor esse consequatur. Cupiditate sed error ea fuga sit provident adipisci neque.</p>
+              </a>
+            </div>
+          </div>
+
+          <div class="card-container">
+            <div class="p-5 ps-4 rounded-4">
+              <a href="#" class="text-decoration-none">
+                <div class="icon bg-main text-white rounded-circle d-flex justify-content-center align-items-center">
+                  <i class="bi bi-calendar4-week"></i>
+                </div>
+                <h3 class="fw-bold fs-4 my-3">Velit Doloremque</h3>
+                <p>Cumque et suscipit saepe. Est maiores autem enim facilis ut aut ipsam corporis aut. Sed animi at autem alias eius labore.</p>
+              </a>
+            </div>
+          </div>
+
+          <div class="card-container">
+            <div class="p-5 ps-4 rounded-4">
+              <a href="#" class="text-decoration-none">
+                <div class="icon bg-main text-white rounded-circle d-flex justify-content-center align-items-center">
+                  <i class="bi bi-chat-square-text"></i>
+                </div>
+                <h3 class="fw-bold fs-4 my-3">Dolori Architecto</h3>
+                <p>Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque non et debitis iure. Corrupti recusandae ducimus enim.</p>
+              </a>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ~============> Status of about <============ -->
-    <section class="status py-5">
+    <!-- ^============> Agents Section <============ -->
+    <section class="agents pb-5">
       <div class="container">
-        <div class="row row-cols-sm-2 row-cols-md-3 row-cols-xl-4 g-4">
+        <div class="title text-center">
+          <h2 class="fw-bold">Our Agents</h2>
+          <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        </div>
 
-          <div>
-            <div class="inner d-flex gap-3 align-items-center p-4">
-              <i class="bi bi-emoji-smile text-main"></i>
-              <div>
-                <h3 class="fw-bold fs-1">232</h3>
-                <p>Happy Clients</p>
+        <div class="row row-cols-md-2 row-cols-lg-3 g-4 py-5">
+          <div class="position-relative mb-5 mb-lg-0">
+            <img src="assets/imgs/team-1.jpg" class="d-block w-100" alt="team-1" />
+            <div class="card-content bg-white p-3 shadow-sm w-85 position-absolute top-100 start-50 translate-middle">
+              <h3 class="fw-bold mb-4">Walter White</h3>
+              <div class="d-flex justify-content-between">
+                <h4>Chief Executive Officer</h4>
+                <ul class="social-links list-unstyled d-flex gap-2 mb-0">
+                  <li><a href="https://twitter.com" target="_blank"><i class="bi bi-twitter-x"></i></a></li>
+                  <li><a href="https://facebook.com" target="_blank"><i class="bi bi-facebook"></i></a></li>
+                  <li><a href="https://instagram.com" target="_blank"><i class="bi bi-instagram"></i></a></li>
+                  <li><a href="https://linkedin.com" target="_blank"><i class="bi bi-linkedin"></i></a></li>
+                </ul>
               </div>
             </div>
           </div>
 
-          <div>
-            <div class="inner d-flex gap-3 align-items-center p-4">
-              <i class="bi bi-journal-richtext text-main"></i>
-              <div>
-                <h3 class="fw-bold fs-1">521</h3>
-                <p>Projects</p>
+          <div class="position-relative mb-5 mb-lg-0">
+            <img src="assets/imgs/team-2.jpg" class="d-block w-100" alt="team-2" />
+            <div class="card-content bg-white p-3 shadow-sm w-85 position-absolute top-100 start-50 translate-middle">
+              <h3 class="fw-bold mb-4">Saul Goodman</h3>
+              <div class="d-flex justify-content-between">
+                <h4>Rent Manager</h4>
+                <ul class="social-links list-unstyled d-flex gap-2 mb-0">
+                  <li><a href="https://twitter.com" target="_blank"><i class="bi bi-twitter-x"></i></a></li>
+                  <li><a href="https://facebook.com" target="_blank"><i class="bi bi-facebook"></i></a></li>
+                  <li><a href="https://instagram.com" target="_blank"><i class="bi bi-instagram"></i></a></li>
+                  <li><a href="https://linkedin.com" target="_blank"><i class="bi bi-linkedin"></i></a></li>
+                </ul>
               </div>
             </div>
           </div>
 
-          <div>
-            <div class="inner d-flex gap-3 align-items-center p-4">
-              <i class="bi bi-headset text-main"></i>
-              <div>
-                <h3 class="fw-bold fs-1">1463</h3>
-                <p>Hours Of Support</p>
-              </div>
-            </div>
-          </div>
-
-          <div>
-            <div class="inner d-flex gap-3 align-items-center p-4">
-              <i class="bi bi-people text-main"></i>
-              <div>
-                <h3 class="fw-bold fs-1">15</h3>
-                <p>Hard Workers</p>
+          <div class="position-relative mb-5 mb-lg-0">
+            <img src="assets/imgs/team-3.jpg" class="d-block w-100" alt="team-3" />
+            <div class="card-content bg-white p-3 shadow-sm w-85 position-absolute top-100 start-50 translate-middle">
+              <h3 class="fw-bold mb-4">William Anderson</h3>
+              <div class="d-flex justify-content-between">
+                <h4>Sale Manager</h4>
+                <ul class="social-links list-unstyled d-flex gap-2 mb-0">
+                  <li><a href="https://twitter.com" target="_blank"><i class="bi bi-twitter-x"></i></a></li>
+                  <li><a href="https://facebook.com" target="_blank"><i class="bi bi-facebook"></i></a></li>
+                  <li><a href="https://instagram.com" target="_blank"><i class="bi bi-instagram"></i></a></li>
+                  <li><a href="https://linkedin.com" target="_blank"><i class="bi bi-linkedin"></i></a></li>
+                </ul>
               </div>
             </div>
           </div>
@@ -199,85 +246,7 @@
       </div>
     </section>
 
-    <!-- ?============> Features Section <============ -->
-    <section class="feature py-5">
-      <div class="container">
-        <div class="row row-cols-md-2 g-5">
-          <div class="px-4 pb-4">
-            <img src="assets/imgs/features-bg.jpg" class="h-100 w-100 object-fit-cover" alt="features" />
-          </div>
-
-          <div class="px-5">
-            <h2 class="fw-bold position-relative">Enim quis est voluptatibus aliquid consequatur fugiat</h2>
-            <p class="my-5">Esse voluptas cumque vel exercitationem. Reiciendis est hic accusamus. Non ipsam et sed
-              minima temporibus
-              laudantium. Soluta voluptate sed facere corporis dolores excepturi</p>
-
-            <ul class="list-unstyled d-flex flex-column gap-3">
-              <li>
-                <a href="#" class="text-decoration-none">
-                  <div class="d-flex gap-4">
-                    <div class="icon shadow-sm">
-                      <i class="bi bi-easel flex-shrink-0 text-main"></i>
-                    </div>
-                    <div>
-                      <h3 class="h5 fw-bold">lorem ipsum</h3>
-                      <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati
-                        cupiditate non provident</p>
-                    </div>
-                  </div>
-                </a>
-              </li>
-
-              <li>
-                <a href="#" class="text-decoration-none">
-                  <div class="d-flex gap-4">
-                    <div class="icon shadow-sm">
-                      <i class="bi bi-patch-check flex-shrink-0 text-main"></i>
-                    </div>
-                    <div>
-                      <h3 class="h5 fw-bold">Nemo Enim</h3>
-                      <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
-                        voluptatum deleniti atque</p>
-                    </div>
-                  </div>
-                </a>
-              </li>
-
-              <li>
-                <a href="#" class="text-decoration-none">
-                  <div class="d-flex gap-4">
-                    <div class="icon shadow-sm">
-                      <i class="bi bi-brightness-high flex-shrink-0 text-main"></i>
-                    </div>
-                    <div>
-                      <h3 class="h5 fw-bold">Dine Pad</h3>
-                      <p>Explicabo est voluptatum asperiores consequatur magnam. Et veritatis odit. Sunt aut deserunt
-                        minus aut eligendi omnis</p>
-                    </div>
-                  </div>
-                </a>
-              </li>
-
-              <li>
-                <a href="#" class="text-decoration-none">
-                  <div class="d-flex gap-4">
-                    <div class="icon shadow-sm">
-                      <i class="bi bi-brightness-high flex-shrink-0 text-main"></i>
-                    </div>
-                    <div>
-                      <h3 class="h5 fw-bold">Tride clov</h3>
-                      <p>Est voluptatem labore deleniti quis a delectus et. Saepe dolorem libero sit non aspernatur odit
-                        amet. Et eligendi</p>
-                    </div>
-                  </div>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
+    <!-- Testimonials section removed -->
   </main>
 
   <!-- &============> Footer <============ -->
@@ -296,19 +265,17 @@
           <i class="bi bi-telephone text-main"></i>
           <div>
             <h3 class="fs-6 mb-3 fw-bold">Contact</h3>
-            <p class="mb-0"><span class="fw-bold">Phone:</span> <a href="tel:+1 5589 55488 55"
-                class="text-decoration-none">+03-6555-6106</a></p>
-            <p class="mb-0"><span class="fw-bold">Email:</span> <a href="mailto:info@example.com"
-                class="text-decoration-none">teiteiefu@gmail.com</a></p>
+            <p class="mb-0"><span class="fw-bold">TEL:</span> <a href="tel:+8155895548855" class="text-decoration-none">03-6555-6106</a></p>
+            <p class="mb-0"><span class="fw-bold">Email:</span> <a href="mailto:teiteiefu@gmail.com" class="text-decoration-none">teiteiefu@gmail.com</a></p>
           </div>
         </div>
 
         <div class="d-flex gap-3">
           <i class="bi bi-clock text-main"></i>
           <div>
-            <h3 class="fs-6 mb-3 fw-bold">Opening Hours</h3>
-            <p class="mb-0"><span class="fw-bold">Mon-Sat:</span> 11AM - 23PM</p>
-            <p class="mb-0"><span class="fw-bold">Sunday:</span> Closed</p>
+            <h3 class="fs-6 mb-3 fw-bold">営業時間</h3>
+            <p class="mb-0"><span class="fw-bold">平日:</span> 10AM - 19PM</p>
+            <p class="mb-0"><span class="fw-bold">定休日:</span> 水曜日、日曜日</p>
           </div>
         </div>
 
@@ -316,27 +283,16 @@
           <h3 class="fs-6 mb-3 fw-bold mb-3">Follow Us</h3>
           <ul class="social-links list-unstyled d-flex gap-2 mb-0 ">
             <li class="border rounded-circle d-flex justify-content-center align-items-center">
-              <a href="https://twitter.com" target="_blank">
-                <i class="bi bi-twitter-x"></i>
-              </a>
+              <a href="https://twitter.com" target="_blank"><i class="bi bi-twitter-x"></i></a>
             </li>
-
             <li class="border rounded-circle d-flex justify-content-center align-items-center">
-              <a href="https://facebock.com" target="_blank">
-                <i class="bi bi-facebook"></i>
-              </a>
+              <a href="https://facebook.com" target="_blank"><i class="bi bi-facebook"></i></a>
             </li>
-
             <li class="border rounded-circle d-flex justify-content-center align-items-center">
-              <a href="https://instagram.com" target="_blank">
-                <i class="bi bi-instagram"></i>
-              </a>
+              <a href="https://instagram.com" target="_blank"><i class="bi bi-instagram"></i></a>
             </li>
-
             <li class="border rounded-circle d-flex justify-content-center align-items-center">
-              <a href="https://linkedin.com" target="_blank">
-                <i class="bi bi-linkedin"></i>
-              </a>
+              <a href="https://linkedin.com" target="_blank"><i class="bi bi-linkedin"></i></a>
             </li>
           </ul>
         </div>
@@ -344,11 +300,9 @@
     </div>
     <div class="copy-right text-center mt-4 pb-4">
       &copy; Copyright <span class="fw-bold">TTF株式会社</span> All Rights Reserved <br>
-      
     </div>
   </footer>
 
   <script src="assets/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>

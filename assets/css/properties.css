@@ -1,0 +1,31 @@
+/* ~============> content of properties <============ */
+.properties-content a {
+  font-family: var(--heading-font);
+  border: 2px solid var(--primary-color);
+  padding: 8px 15px;
+  transition: background-color var(--default-duration);
+  font-size: 14px;
+}
+
+.properties-content a:hover {
+  background-color: rgba(46, 202, 106, 0.7);
+}
+
+.properties-content img {
+  filter: brightness(0.4);
+}
+
+.properties-content .card-content {
+  position: absolute;
+  left: 0px;
+  bottom: -83px;
+  transition: bottom var(--default-duration);
+}
+
+.properties-content .row > div:hover .card-content {
+  bottom: -16px;
+}
+
+.properties-content .card-content h3 {
+  border-left: 3px solid var(--primary-color);
+}

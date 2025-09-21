@@ -1,0 +1,35 @@
+/* !============> Header of Contact <============  */
+.contact .container iframe {
+  width: 100%;
+  height: 300px;
+}
+
+.contact .row .icon {
+  width: 50px;
+  height: 50px;
+}
+
+.contact .row .icon i {
+  font-size: 20px;
+}
+
+.form-control:focus {
+  border-color: var(--primary-color);
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem #2eca6a3a;
+}
+
+.form-control::placeholder {
+  opacity: 0.5;
+}
+
+textarea.form-control {
+  min-height: 200px;
+  max-height: 350px;
+}
+
+.contact button[type="submit"] {
+  width: fit-content;
+  color: #fff;
+  padding: 10px 25px;
+}

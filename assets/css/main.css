@@ -1,0 +1,225 @@
+/* ~============> Global Styles <============ */
+:root {
+  --primary-color: #2eca6a;
+  --main-color: #333;
+  --default-font: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --heading-font: "Raleway", sans-serif;
+  --nav-font: "Poppins", sans-serif;
+  --default-duration: 400ms;
+}
+
+body {
+  color: var(--main-color);
+  font-family: var(--default-font);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading-font);
+}
+
+a {
+  color: inherit;
+}
+
+.head .title {
+  max-width: 800px;
+}
+
+/* ^============> Our Utilities <============ */
+.text-main {
+  color: var(--primary-color);
+}
+
+.bg-main {
+  background-color: var(--primary-color);
+}
+
+.fw-max-bold {
+  font-weight: 900;
+}
+
+.w-85 {
+  width: 85%;
+}
+
+/* *============> Navbar <============  */
+.navbar {
+  font-family: var(--nav-font);
+}
+
+.navbar .navbar-brand {
+  font-family: var(--heading-font);
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.navbar .bi-list {
+  font-size: 38px;
+}
+
+@media screen and (min-width: 992px) {
+  .navbar .nav-item .nav-link {
+    position: relative;
+  }
+
+  .navbar .nav-item .nav-link::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: var(--primary-color);
+    left: 8px;
+    bottom: 0;
+    transition: width var(--default-duration);
+  }
+
+  .navbar .nav-item:hover .nav-link::before,
+  .navbar .nav-item .active::before {
+    width: calc(100% - 16px);
+  }
+}
+
+/* ~============> Hero Section <============  */
+.hero .carousel-item img {
+  filter: brightness(0.5);
+}
+
+.hero .carousel-caption a {
+  font-family: var(--heading-font);
+  border: 2px solid var(--primary-color);
+  padding: 12px 35px;
+  transition: background-color var(--default-duration);
+}
+
+.hero .carousel-caption a:hover {
+  background-color: rgba(46, 202, 106, 0.7);
+}
+
+.hero .carousel-indicators [data-bs-target] {
+  width: 20px;
+  background-color: #fff;
+  padding: 1px;
+  opacity: 1;
+  transition: width var(--default-duration),
+    background-color var(--default-duration);
+}
+
+.hero .carousel-indicators [data-bs-target].active {
+  width: 40px;
+  background-color: var(--primary-color);
+}
+
+/* &============> Services Section <============ */
+.services .card-container .icon {
+  width: 60px;
+  height: 60px;
+}
+
+.services .card-container .icon i {
+  font-size: 30px;
+}
+
+.services .card-container p {
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.services .card-container > div {
+  box-shadow: 0px 5px 90px 0px rgba(0, 0, 0, 0.1);
+  border-bottom: 5px solid transparent;
+  transition: border-color var(--default-duration),
+    transform var(--default-duration);
+}
+
+.services .card-container:hover > div {
+  border-color: var(--primary-color);
+  transform: translateY(-10px);
+}
+
+.services .card-container > div h3 {
+  transition: color var(--default-duration);
+}
+
+.services .card-container:hover > div h3 {
+  color: var(--primary-color);
+}
+
+/* ^============> Agents Section <============ */
+.agents .card-content h3 {
+  font-size: 17px;
+  position: relative;
+}
+
+.agents .card-content h3::after {
+  position: absolute;
+  content: "";
+  width: 50px;
+  height: 2px;
+  background-color: #cecdcd;
+  left: 0;
+  bottom: -12px;
+}
+
+.agents .card-content h4 {
+  font-size: 14px;
+}
+
+.agents .social-links i {
+  filter: brightness(0.5);
+}
+
+.agents .social-links li i {
+  color: rgba(255, 255, 255, 0.7);
+  transition: color var(--default-duration);
+}
+
+.agents .social-links li:hover i {
+  color: var(--primary-color);
+}
+
+/* *============> Testimonals Section <============ */
+.testimonals img {
+  width: 80px;
+}
+
+.testimonals .carousel-indicators [data-bs-target] {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #b4b3b3;
+}
+
+/* &============> Footer <============ */
+.footer i:not(.social-links i) {
+  font-size: 25px;
+}
+
+.footer .social-links li {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer .social-links li i {
+  transition: color var(--default-duration);
+}
+
+.footer .social-links li:hover i {
+  color: var(--primary-color);
+}

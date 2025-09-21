@@ -1,0 +1,38 @@
+/* ^============> Header of about <============ */
+
+/* &============> Content of about <============ */
+.about-us ul li i {
+  font-size: 22px;
+}
+
+/* ~============> Status of about <============ */
+.status i {
+  font-size: 40px;
+}
+
+.status .inner {
+  box-shadow: 0px 5px 90px 0px rgba(0, 0, 0, 0.1);
+}
+
+/* ?============> Features Section <============ */
+.feature div div h2::before {
+  content: "";
+  position: absolute;
+  width: 55px;
+  height: 3px;
+  background-color: var(--primary-color);
+  left: 0;
+  bottom: -20px;
+}
+
+.feature div ul .icon {
+  width: 100px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.feature div ul .icon i {
+  font-size: 30px;
+}
